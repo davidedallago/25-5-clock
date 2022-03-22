@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+ * {
+	 font-family: Poppins;
+}
+ body {
+	 background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+	 background: linear-gradient(60deg, #22c1c3 0%, #fdbb2d 100%);
+	 color: black;
+	 font-size: 30px;
+	 text-align: center;
+}
+ body #container {
+	 display: flex;
+	 height: 100vh;
+	 justify-content: center;
+	 align-items: center;
+}
+ body #container .main-title {
+	 font-size: 50px;
+	 margin-bottom: 20px;
+}
+ body #container .length-control {
+	 width: 250px;
+}
+ body #container button {
+	 background: rgba(0, 0, 0, 0.4);
+	 outline: none;
+	 border: none;
+	 cursor: pointer;
+	 border-radius: 20px;
+	 padding: 15px;
+	 margin: 5px;
+}
+ body #container button i {
+	 color: rgba(0, 0, 0, 0.5);
+	 margin: 2px;
+}
+ body #container button:hover {
+	 background: rgba(0, 0, 0, 0.6);
+	 transition: 0.1s;
+}
+ body #container button:active {
+	 background: rgba(0, 0, 0, 0.7);
+	 transition: 0.1s;
+}
+ body #container .btn-level, body #container .length-control {
+	 display: inline-block;
+	 margin: 5px;
+}
+ body #container .btn-level .btn-level:nth-child(3), body #container .length-control .btn-level:nth-child(3) {
+	 width: 40px;
+}
+ body #container .timer {
+	 background: rgba(255, 255, 255, 0.9);
+	 margin: 20px auto 20px auto;
+	 width: 270px;
+	 height: 270px;
+	 border-radius: 10000px;
+	 position: relative;
+}
+ body #container .timer .timer-wrapper {
+	 position: absolute;
+	 width: 190px;
+	 height: 110px;
+	 left: 50%;
+	 top: 50%;
+	 margin-left: -95px;
+	 margin-top: -57px;
+}
+ body #container .timer #time-left {
+	 font-size: 50px;
+}
+ @media screen and (max-width: 500px) {
+	 #container {
+		 transform: scale(0.8);
+		 -webkit-transform: scale(0.8);
+		 -moz-transform: scale(0.8);
+		 -ms-transform: scale(0.8);
+		 -o-transform: scale(0.8);
+	}
+}
+ 
